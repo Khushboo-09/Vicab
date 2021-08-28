@@ -8,6 +8,17 @@ function SearchWords() {
     const [searchWord, setSearchWord] = useState('')
     const [synonyms, setSynonyms] = useState('')
 
+
+    const options = {
+        method: 'GET',
+        url: `https://languagetools.p.rapidapi.com/synonyms/${searchWord}`,
+        headers: {
+          'x-rapidapi-host': 'languagetools.p.rapidapi.com',
+          'x-rapidapi-key': 'undefined'
+        }
+      };
+
+
     const getMeaning = () => {
         axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${searchWord}`)
             .then((response) => {
@@ -18,13 +29,13 @@ function SearchWords() {
                 return <p>No Such word found!!!</p>
             })
 
-        axios.get(`https://languagetools.p.rapidapi.com/synonyms/${searchWord}`)
-            .then((response) => {
-                console.log(response)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
+        axios.request(options)
+        .then((response) =>{
+            setSynonyms(response.data[0])
+        })
+        .catch((error) =>{
+            console.error(error);
+        });
     }
 
     const playAudio = () => {
@@ -58,12 +69,13 @@ function SearchWords() {
                     <p>{data.meanings[0].definitions[0].definition}</p>
 
                     {data.meanings[0].definitions[0].example &&
-                        (`<h4>Example:</h4>
+                        (<div>
 
-                        <p>{data.meanings[0].definitions[0].example}</p>`)
-                    }
-
-
+                            <h4>Example:</h4>
+    
+                            <p>{data.meanings[0].definitions[0].example}</p>
+                        </div>
+                    )}
                 </div>
             )}
 
