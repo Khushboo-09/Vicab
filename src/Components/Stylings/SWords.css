@@ -13,3 +13,9 @@
     margin-top: 240px;
     border: 2px solid blue;
 }
+button{
+    margin-top: 10px ;
+}
+p{
+    text-transform: capitalize;
+}
