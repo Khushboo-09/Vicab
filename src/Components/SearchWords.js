@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import SWords from './Stylings/SWords.css'
+import './Stylings/SWords.css'
 import { FaSearch } from 'react-icons/fa';
 import { FcSpeaker } from 'react-icons/fc';
 function SearchWords() {
@@ -24,39 +24,37 @@ function SearchWords() {
     }
     return (
         <div className="wordContainer">
+            <h1>Vocab</h1>
             <div className="inputClass">
                 <input name="searchWord" type="text" placeholder="Search here....." onChange={(e) => { setSearchWord(e.target.value) }} />
-            </div>
-            <div>
                 <button onClick={getMeaning}><FaSearch size="20px" /></button>
             </div>
-            <div>
-
-                {data && (
-                    <div className="showResults">
-                        <h2>
-                            {data.word}{" "}
-                            <button onClick={() => { playAudio() }}>
-                                <FcSpeaker size="26px" />
-                            </button>
-                        </h2>
-                        <h4>Parts of speech:</h4>
-
-                        <p>{data.meanings[0].partOfSpeech}</p>
 
 
-                        <h4>Definition:</h4>
 
-                        <p>{data.meanings[0].definitions[0].definition}</p>
+            {data && (
+                <div className="showResults">
+                    <h2>
+                        {data.word}{" "}
+                        <button onClick={() => { playAudio() }}>
+                            <FcSpeaker size="26px" />
+                        </button>
+                    </h2>
+                    <h4>Parts of speech:</h4>
 
+                    <p>{data.meanings[0].partOfSpeech}</p>
 
-                        <h4>Example:</h4>
+                    <h4>Definition:</h4>
 
-                        <p>{data.meanings[0].definitions[0].example}</p>
+                    <p>{data.meanings[0].definitions[0].definition}</p>
 
-                    </div>
-                )}
-            </div>
+                    <h4>Example:</h4>
+
+                    <p>{data.meanings[0].definitions[0].example}</p>
+
+                </div>
+            )}
+
         </div>
     );
 
