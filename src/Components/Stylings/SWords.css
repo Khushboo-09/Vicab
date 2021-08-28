@@ -1,0 +1,15 @@
+.wordContainer{
+    box-sizing: border-box;
+    display:block;
+    border: 10px solid red;
+    height :100vh;
+    justify-content: center; 
+    align-items: center;
+}
+
+.inputClass{
+    display:flex;
+    justify-content: center;
+    margin-top: 240px;
+    border: 2px solid blue;
+}
