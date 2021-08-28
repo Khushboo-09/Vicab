@@ -6,18 +6,6 @@ import { FcSpeaker } from 'react-icons/fc';
 function SearchWords() {
     const [data, setdata] = useState("")
     const [searchWord, setSearchWord] = useState('')
-    const [synonyms, setSynonyms] = useState('')
-
-
-    const options = {
-        method: 'GET',
-        url: `https://languagetools.p.rapidapi.com/synonyms/${searchWord}`,
-        headers: {
-          'x-rapidapi-host': 'languagetools.p.rapidapi.com',
-          'x-rapidapi-key': 'undefined'
-        }
-      };
-
 
     const getMeaning = () => {
         axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${searchWord}`)
@@ -28,14 +16,6 @@ function SearchWords() {
                 console.log(error)
                 return <p>No Such word found!!!</p>
             })
-
-        axios.request(options)
-        .then((response) =>{
-            setSynonyms(response.data[0])
-        })
-        .catch((error) =>{
-            console.error(error);
-        });
     }
 
     const playAudio = () => {
@@ -70,12 +50,10 @@ function SearchWords() {
 
                     {data.meanings[0].definitions[0].example &&
                         (<div>
-
                             <h4>Example:</h4>
-    
                             <p>{data.meanings[0].definitions[0].example}</p>
                         </div>
-                    )}
+                        )}
                 </div>
             )}
 
