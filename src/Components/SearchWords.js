@@ -11,6 +11,7 @@ function SearchWords() {
         axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${searchWord}`)
             .then((response) => {
                 setdata(response.data[0])
+                console.log(response.data[0])
             })
             .catch((error) => {
                 console.log(error)
@@ -40,6 +41,7 @@ function SearchWords() {
                             <FcSpeaker size="26px" />
                         </button>
                     </h2>
+                    
                     <h4>Parts of speech:</h4>
 
                     <p>{data.meanings[0].partOfSpeech}</p>
@@ -56,7 +58,6 @@ function SearchWords() {
                         )}
                 </div>
             )}
-
         </div>
     );
 

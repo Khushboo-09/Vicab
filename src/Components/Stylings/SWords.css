@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
  
 .wordContainer {
-  height: 120vh;
-  width: 100vw;
+  /* height: 120vh;
+  width: 100vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,4 +77,24 @@ input{
   border-radius: 30px;
   cursor: pointer;
   background-color: #24214d;
+}
+
+#synonym{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#antonym{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+pre{
+  font-family: 'Playfair Display', serif;
+}
+
+#partsOfSpeech{
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #24214d;
 }

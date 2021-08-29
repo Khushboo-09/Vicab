@@ -1,10 +1,10 @@
 import './App.css';
-import SearchWords from './Components/SearchWords';
+import DemoComp from './Components/DemoComp'
 
 function App() {
   return (
     <div className="App">
-     <SearchWords></SearchWords>
+     <DemoComp></DemoComp>
     </div>
   );
 }
