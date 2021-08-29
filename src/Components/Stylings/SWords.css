@@ -19,7 +19,6 @@ body{
   flex-direction: column;
   align-items: center;
   max-height: auto;
- 
   font-family: 'Playfair Display', serif;
   background-size: cover;
 }
@@ -100,16 +99,18 @@ input{
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 pre{
   font-family: 'Playfair Display', serif;
   display: flex;
+  flex-direction: row;
   background-color:#36317a;
   margin:2px;
   border-radius: 5px;
   padding:4px;
   color:white;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #partsOfSpeech{

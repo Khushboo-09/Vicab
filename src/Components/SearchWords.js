@@ -6,6 +6,7 @@ import { FcSpeaker } from 'react-icons/fc';
 function SearchWords() {
     const [data, setdata] = useState("")
     const [searchWord, setSearchWord] = useState('')
+    
 
     const getMeaning = () => {
         axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${searchWord}`)
@@ -65,7 +66,7 @@ function SearchWords() {
                                                     {element.synonyms.length!==0&& (
                                                         <div>
                                                             <h4 >Synonyms</h4>
-                                                            <p id="synonym" >{element.synonyms.map(synonym => { return <pre>{synonym}</pre> })}</p>
+                                                            <p id="synonym">{element.synonyms.map(synonym => { return <pre>{synonym}</pre> })}</p>
                                                         </div>)
                                                     }
                                                     {element.antonyms.length!==0 && (
