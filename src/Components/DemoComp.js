@@ -23,6 +23,7 @@ function SearchWords() {
         let audio = new Audio(data.phonetics[0].audio);
         audio.play();
     }
+
     return (
         <div className="wordContainer">
             <h1>Vocab</h1>
@@ -46,7 +47,7 @@ function SearchWords() {
                         (data.meanings.map(meaning => {
                             return (
                                 <>
-                                    <h4 idname = "partsOfSpeech">Parts of speech:</h4>
+                                    <h4 id = "partsOfSpeech">Part of speech:</h4>
                                     <p>{meaning.partOfSpeech}</p>
                                     {
                                         meaning.definitions.map(element => {
@@ -61,16 +62,16 @@ function SearchWords() {
                                                             <p>{element.example}.</p>
                                                         </div>)
                                                     }
-                                                    {element.synonyms.length!==0 && (
+                                                    {element.synonyms.length!==0&& (
                                                         <div>
                                                             <h4 >Synonyms</h4>
-                                                            <p id="synonym">{element.synonyms.map(synonym => { return <pre>{synonym}, </pre> })}</p>
+                                                            <p id="synonym">{element.synonyms.map(synonym => { return <pre>{synonym}</pre> })}</p>
                                                         </div>)
                                                     }
                                                     {element.antonyms.length!==0 && (
                                                         <div>
                                                             <h4 >Antonyms</h4>
-                                                            <p id="antonyms">{element.antonyms.map(antonym => { return <pre>{antonym}, </pre> })}</p>
+                                                            <p id="antonyms">{element.antonyms.map(antonym => { return <pre>{antonym}</pre> })}</p>
                                                         </div>)
                                                     }
 
