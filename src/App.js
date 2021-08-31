@@ -1,11 +1,15 @@
 import './App.css';
+import FooterFile from './Components/FooterFile';
+import HeaderFile from './Components/HeaderFile';
 import SearchWords from './Components/SearchWords';
 
 
 function App() {
   return (
     <div className="App">
-     <SearchWords></SearchWords>
+      <HeaderFile></HeaderFile>
+      <SearchWords></SearchWords>
+      <FooterFile></FooterFile>
     </div>
   );
 }

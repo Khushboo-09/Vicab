@@ -6,21 +6,25 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
-body{
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 .wordContainer {
-  height: 120vh;
+  min-height: 89vh;
+  height: auto;
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-height: auto;
   font-family: 'Playfair Display', serif;
-  background-size: cover;
+  background-size: cover no-repeat no-repeat;
+  background: #bdc3c7;  
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7); 
+   /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2c3e50, #bdc3c7); 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
  
 h1 {
@@ -50,7 +54,11 @@ h4{
 p{
   margin:5px 0;
 }
-
+.inputClass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 input{
   width: 400px;
   height: 38px;
@@ -117,4 +125,182 @@ pre{
   font-size: 1.5em;
   font-weight: bolder;
   color: #24214d;
+}
+
+.wordNotFoundError{
+  margin:40px;
+  padding: 20px;
+  color:white;
+  background-color: #b01d1d;
+  border:4px solid rgb(243,123,123);
+  border-radius: 20px;
+}
+
+/* For iPads */
+
+@media all and (max-width:700px)and (min-width:601px){
+  h1{
+    font-size: 2.7em;
+    padding:0.37em;
+  }
+
+  .showResults{
+    width:475px
+  }
+  h2{
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+
+  #partsOfSpeech{
+    font-size: 1.3em;
+  }
+  h4{
+    font-size: 1.1em;
+  }
+  p,pre{
+    font-size: 0.8em;
+  }
+  pre{
+    flex-wrap: wrap;
+  }
+  input{
+    width:250px;
+    font-size: 16px;
+    height:35px;
+  }
+
+  .inputClass >button{
+    width:50px;
+    margin-left: 15px;
+    height:35px;
+    padding-bottom: 0;
+  }
+}
+
+/* for Mobiles */
+@media all and (max-width:600px)and (min-width:501px){
+  h1{
+    font-size: 2.5em;
+  }
+  .showResults{
+    width:450px;
+  }
+  h2{
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+  
+  #partsOfSpeech{
+    font-size: 1.1em;
+  }
+  h4{
+    font-size: 0.9em;
+  }
+  p,pre{
+    font-size: 0.7em;
+  }
+  pre{
+    flex-wrap: wrap;
+  }
+  input{
+    width:220px;
+    font-size: 14px;
+    height:35px;
+  }
+
+  .inputClass >button{
+    width:50px;
+    margin-left: 15px;
+    height:35px;
+    padding-bottom: 0;
+    /* margin-top: 5px; */
+  }
+}
+
+/* Small Mobiles */
+@media all and (max-width:500px)and (min-width:401px) {
+
+  h1{
+    font-size: 2.3em;
+  }
+
+  .showResults{
+    width: 400px;
+  }
+  h2{
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+  
+  #partsOfSpeech{
+    font-size: 1.5em;
+  }
+  h4{
+    font-size: 12px;
+  }
+  p,pre{
+    font-size: 10px;
+  }
+  pre{
+    flex-wrap: wrap;
+    padding: 3px;
+  }
+  
+  input{
+    width:200px;
+    font-size: 14px;
+    height:35px;
+  }
+
+  .inputClass >button{
+    width:50px;
+    margin-left: 15px;
+    height:35px;
+    padding-bottom: 0;
+  
+  }
+}
+
+/* for Iphones */
+@media all and (max-width:400px)and (min-width:301px) {
+
+  h1{
+    font-size: 2em;
+  }
+
+  .showResults{
+    width: 325px;
+  }
+  h2{
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+  
+  #partsOfSpeech{
+    font-size: 1.5em;
+  }
+  h4{
+    font-size: 12px;
+  }
+  p,pre{
+    font-size: 10px;
+  }
+  pre{
+    flex-wrap: wrap;
+    padding: 3px;
+  }
+  input{
+    width:200px;
+    font-size: 14px;
+    height:35px;
+  }
+
+  .inputClass >button{
+    width:50px;
+    margin-left: 15px;
+    height:35px;
+    padding-bottom: 0;
+  
+  }
 }

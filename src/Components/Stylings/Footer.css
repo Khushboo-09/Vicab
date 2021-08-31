@@ -1,0 +1,75 @@
+
+*{
+    margin: 0;
+    padding:0;
+    top:0;
+    box-sizing: border-box;
+}
+footer{
+    height:80px;
+    background-color: #373757;
+}
+
+.social_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.icons{
+    padding: 10px;
+    margin:0 5px;
+}
+
+.copyright{
+    font-size: 25px;
+}
+
+/* For iPads */
+@media all and (max-width:700px) and (min-width:601px){
+    footer{
+        height:60px;
+    }
+    
+    .copyright{
+        font-size: 20px;
+    }
+
+    
+}
+
+/* For Mobiles */
+@media all and (max-width:600px) and (min-width:501px){
+    footer{
+        height:45px;
+    }
+    
+    .copyright{
+        font-size: 16px;
+    }
+
+    
+}
+/* For Small Mobiles */
+@media all and (max-width:500px) and (min-width:401px){
+    footer{
+        height:45px;
+    }
+    
+    .copyright{
+        font-size: 14px;
+    }
+
+    
+}
+
+@media all and (max-width:400px) {
+    footer{
+        height:45px
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+ 
