@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/khushboo-09.github.io/Vocab/static/css/main.a8e47e38.chunk.css",
-    "main.js": "/khushboo-09.github.io/Vocab/static/js/main.132d24b0.chunk.js",
-    "main.js.map": "/khushboo-09.github.io/Vocab/static/js/main.132d24b0.chunk.js.map",
-    "runtime-main.js": "/khushboo-09.github.io/Vocab/static/js/runtime-main.cd96f8da.js",
-    "runtime-main.js.map": "/khushboo-09.github.io/Vocab/static/js/runtime-main.cd96f8da.js.map",
-    "static/js/2.6936406a.chunk.js": "/khushboo-09.github.io/Vocab/static/js/2.6936406a.chunk.js",
-    "static/js/2.6936406a.chunk.js.map": "/khushboo-09.github.io/Vocab/static/js/2.6936406a.chunk.js.map",
-    "static/js/3.cc7a152d.chunk.js": "/khushboo-09.github.io/Vocab/static/js/3.cc7a152d.chunk.js",
-    "static/js/3.cc7a152d.chunk.js.map": "/khushboo-09.github.io/Vocab/static/js/3.cc7a152d.chunk.js.map",
-    "index.html": "/khushboo-09.github.io/Vocab/index.html",
-    "static/css/main.a8e47e38.chunk.css.map": "/khushboo-09.github.io/Vocab/static/css/main.a8e47e38.chunk.css.map",
-    "static/js/2.6936406a.chunk.js.LICENSE.txt": "/khushboo-09.github.io/Vocab/static/js/2.6936406a.chunk.js.LICENSE.txt",
-    "static/media/logo.b5c21ef7.png": "/khushboo-09.github.io/Vocab/static/media/logo.b5c21ef7.png"
+    "main.css": "/Vocab/static/css/main.a8e47e38.chunk.css",
+    "main.js": "/Vocab/static/js/main.132d24b0.chunk.js",
+    "main.js.map": "/Vocab/static/js/main.132d24b0.chunk.js.map",
+    "runtime-main.js": "/Vocab/static/js/runtime-main.ae65201d.js",
+    "runtime-main.js.map": "/Vocab/static/js/runtime-main.ae65201d.js.map",
+    "static/js/2.6936406a.chunk.js": "/Vocab/static/js/2.6936406a.chunk.js",
+    "static/js/2.6936406a.chunk.js.map": "/Vocab/static/js/2.6936406a.chunk.js.map",
+    "static/js/3.cc7a152d.chunk.js": "/Vocab/static/js/3.cc7a152d.chunk.js",
+    "static/js/3.cc7a152d.chunk.js.map": "/Vocab/static/js/3.cc7a152d.chunk.js.map",
+    "index.html": "/Vocab/index.html",
+    "static/css/main.a8e47e38.chunk.css.map": "/Vocab/static/css/main.a8e47e38.chunk.css.map",
+    "static/js/2.6936406a.chunk.js.LICENSE.txt": "/Vocab/static/js/2.6936406a.chunk.js.LICENSE.txt",
+    "static/media/logo.b5c21ef7.png": "/Vocab/static/media/logo.b5c21ef7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cd96f8da.js",
+    "static/js/runtime-main.ae65201d.js",
     "static/js/2.6936406a.chunk.js",
     "static/css/main.a8e47e38.chunk.css",
     "static/js/main.132d24b0.chunk.js"
