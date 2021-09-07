@@ -262,8 +262,8 @@ pre{
   }
 }
 
-/* for Iphones */
-@media all and (max-width:400px)and (min-width:301px) {
+/* For Iphones */
+@media all and (max-width:400px)and (min-width:321px) {
 
   h1{
     font-size: 2em;
@@ -271,6 +271,49 @@ pre{
 
   .showResults{
     width: 325px;
+  }
+  h2{
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+  
+  #partsOfSpeech{
+    font-size: 1.5em;
+  }
+  h4{
+    font-size: 12px;
+  }
+  p,pre{
+    font-size: 10px;
+  }
+  pre{
+    flex-wrap: wrap;
+    padding: 3px;
+  }
+  input{
+    width:200px;
+    font-size: 14px;
+    height:35px;
+  }
+
+  .inputClass >button{
+    width:50px;
+    margin-left: 15px;
+    height:35px;
+    padding-bottom: 0;
+  
+  }
+}
+
+
+@media all and (max-width:321px)and (min-width:300px) {
+
+  h1{
+    font-size: 2em;
+  }
+
+  .showResults{
+    width: 310px;
   }
   h2{
     font-size: 20px;
